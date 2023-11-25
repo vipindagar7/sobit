@@ -1,0 +1,617 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+/* universal properties */
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+/* imported fonts */
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header starts here */
+/* logo  */
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: blue;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: blue;
+    font-family: 'Orbitron', sans-serif;
+}
+header {
+    width: 98%;
+    padding: 1%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+
+}
+
+.nav-list {
+    display: flex;
+    gap: 34px;
+    list-style: none;
+}
+
+/* nav list design */
+.nav-list-item {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
+    color: black;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+/* highlight active element of a navbar */
+.active {
+    text-decoration: underline;
+}
+
+
+/* desgin store and login btn present in navbar */
+header .icons {
+    display: flex;
+    gap: 42px;
+}
+
+/* store btn and login btn */
+.store a,
+.login a {
+    text-decoration: none;
+}
+
+/* hover effect on store and login btn */
+.store a:hover,
+.login a:hover {
+    text-decoration: underline;
+}
+
+.store a img,
+.login a img {
+    width: 26px;
+}
+
+.store a p,
+.login a p {
+    font-size: medium;
+    text-align: center;
+    color: black;
+
+}
+
+
+
+/* main content starts here desktop view */
+
+/* home page */
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .slide-show {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* slide show btn */
+
+.slideshow-btn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slideshow-btn button {
+    width: 50px;
+    height: 100px;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    align-items: center;
+    cursor: pointer;
+    background-color: #000;
+
+}
+
+/* slideshow content */
+.slide-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.active-slide {
+    display: flex;
+}
+
+/* common for all container */
+.container {
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.box {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+}
+
+
+.about-text {
+    width: 88%;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    color: black;
+    text-align: justify;
+
+    padding: 10px
+}
+
+/* about page image container desktop view */
+.image-container {
+    width: 70%;
+    height: 70%;
+
+}
+
+.about-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 40%;
+}
+
+.image-text{
+    width: 100%;
+    gap: 15px;
+}
+
+.image-text h1 , .image-text h3{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+/* service page starts here */
+.service{
+    flex-direction: column;
+    
+}
+
+.service-container{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service-item{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 350px;
+    height: 400px;
+}
+.service-text{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.service-text h1{
+    font-size: larger;
+}
+
+.service-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icon img{
+    width: 90%;
+}
+
+/* service pages ends here */
+
+/* contact page starts here */
+
+.contact .right h1{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.input{
+    width: 350px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-white{
+    background-color:white;
+    color: black;
+    width: max-content;
+}
+/* contact image pic */
+
+
+.contact-image img{
+    width:100%;
+}
+
+/* contact page ends here */
+
+
+/* footer starts here */
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: white;
+}
+.footer-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.footer-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.footer-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+
+.social-icons .social{
+    width: 176px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.social img{
+    width: 40px;
+}
+.social a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: medium;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    /* hamburger menu */
+    .bar {
+        display: block;
+        width: 44px;
+        height: 4px;
+        background: #000;
+        margin: 6px;
+        transition: transform 800ms ease;
+    }
+
+    .menu-open .bar:nth-child(1) {
+        transition: transform 800ms ease;
+        transform: translateY(10px) rotate(45deg);
+        width: 34px;
+    }
+
+    .menu-open .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-open .bar:nth-child(3) {
+        transition: transform 800ms ease;
+        transform: translateY(-10px) rotate(-45deg);
+        width: 34px;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        animation: menu-open 1s 1;
+        backdrop-filter: blur(4px);
+        background: white;
+    }
+
+    @keyframes menu-open {
+
+        from {
+            opacity: 0;
+            top: -100px;
+        }
+
+
+
+    }
+
+    .nav-list-show {
+        display: flex;
+    }
+
+    /* nav list design */
+    .nav-list a {
+        font-size: larger;
+    }
+
+    /* desgin store and login btn present in navbar */
+    header .icons {
+        gap: 18px;
+    }
+
+    /* desgin store and login btn present in navbar mobile view */
+
+    .store a img,
+    .login a img {
+        width: 36px;
+    }
+
+    .store a p,
+    .login a p {
+        font-size: small;
+
+    }
+
+    /* home page starts here at mobile view */
+
+    /* home page */
+
+
+    /* home page add here */
+
+    /* about page starts here */
+
+
+
+    /* common for all container */
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    .box {
+        width: 100%;
+        height:auto;
+    }
+
+    .about-heading {
+        font-family: 'Poppins', sans-serif;
+        font-size: xx-large;
+        color: black;
+        text-align: center;
+    }
+    
+    
+    .about-text {
+        width: 88%;
+        font-family: 'Roboto', sans-serif;
+        font-size: large;
+        color: black;
+        text-align: justify;
+    
+        padding: 10px
+    }
+    
+    /* about page image container desktop view */
+    .image-container {
+        width: 70%;
+        height: 50%;
+    
+    }
+
+    .about-image{
+        width: 100%;
+    }
+    
+    /* service page starts here */
+    
+    .service-container{
+        gap: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    
+    .service-item{
+        width: 262px;
+        height: 365px;
+    }
+    
+    /* service image desgin */
+    .service-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+  
+    
+    /* service pages ends here */
+    /* contact page starts here */
+
+.contact .right h1{
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.input-group{
+    gap: 12px;
+}
+
+.input{
+    width: 210px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+.btn{
+    font-size: medium;
+
+}
+/* contact image pic */
+
+
+.contact-image img{
+    width:100%;
+}
+
+/* contact page ends here */
+
+
+    /* footer starts here */
+
+footer{
+    margin-top: 56px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: white;
+    gap: 10px;
+}
+.footer-left{
+
+    width: 30%;
+
+}
+.footer-center{
+
+    width: 40%;
+}
+.footer-right{
+    width: 100%;
+}
+
+
+.social-icons .social{
+    width: 128px;
+  
+    
+}
+
+.social img{
+    width: 20px;
+}
+}

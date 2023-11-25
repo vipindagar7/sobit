@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOBIT</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="logo"><a href="">SOBIT.COM</a></h1>
+        <div class="icons">
+
+            <div class="store">
+                <a href="">
+                    <img src="images/online-store.png" alt="">
+                    <p>Store</p>
+                </a>
+            </div>
+            <div class="login">
+                <a href="">
+                    <img src="images/student.png" alt="" style="margin: 1px;">
+                    <p>Agent</p>
+                </a>
+            </div>
+        </div>
+        <div class="humburger menu-close" id="humburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-list" id="menu">
+            <li><a href="#home" class="nav-list-item active">Home</a></li>
+            <li><a href="#about" class="nav-list-item">About</a></li>
+            <li><a href="#service" class="nav-list-item">Services</a></li>
+            <li><a href="#contact" class="nav-list-item">Contact Me</a></li>
+        </ul>
+    </header>
+    <!-- end of navbar -->
+    <main>
+        <!-- home page starts  here -->
+        <section class="home" id="home">
+
+            <div class="slde-show">
+                <div class="slideshow-btn">
+                    <button id="previous-slide-btn "> p </button>
+                    <button id="next-slide-btn " onclick="nextSlideButton()"> n </button>
+                </div>
+                <div class="slide-container">
+                    <div class="slide  active-slide">First</div>
+                    <div class="slide ">Second</div>
+                    <div class="slide ">third</div>
+                    <div class="slide ">fourth</div>
+                    <div class="slide">fift</div>
+                </div>
+            </div>
+        </section>
+        <!-- home page ends here -->
+        <!-- about page starts here -->
+        <section class="container about" id="about">
+            <div class="left box">
+                <div class="image-container">
+                    <img src="images/about-img.jpg" alt="" class="about-image">
+                    <div class="image-text">
+                        <h1>ELON MUSK</h1>
+                        <h3>Founder</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="right box">
+
+                <h2 class="about-heading">About Me</h2>
+                <p class="about-text">
+                    Welcome to SOBIT SERVICE CENTER PRIVATE LIMITED, where our mission is clear: to revolutionize rural
+                    India's digital landscape by establishing accessible computer centers in every village.
+                    At [Your Company Name], we're committed to driving innovation and fostering economic growth by
+                    creating a network of computer centers that serve as hubs for education, skill development, and
+                    entrepreneurship. Through strategic collaborations with businesses, we facilitate access to
+                    cutting-edge technology while boosting sales for our partner companies.
+                    Our approach is community-centric, ensuring that each center is tailored to the specific needs of
+                    the villages we serve. We prioritize sustainable practices and measure success not only by business
+                    outreach but by the tangible impact we make in empowering communities.
+                    Join us in our journey to empower rural India through technology and collaborative partnerships.
+                    Together, let's create a digitally inclusive landscape where every village thrives in the modern
+                    age.
+
+                </p>
+        </section>
+        <!-- about page ends here -->
+
+        <!-- services page starts here -->
+
+        <section class="service container" id="service">
+            <h2 class="service-heading">Our Services</h2>
+            <div class="service-container">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <img src="images/computer-center.jpg" alt="" class="service-icon-image">
+                    </div>
+                    <div class="service-text">
+                        <h1>Computer Center</h1>
+                        <p>
+                            We provide a wide range of computer centers in every village in the country.
+                        </p>
+                    </div>
+                    <div class="service-list">
+                        <h3>Services list</h3>
+                        <marquee behavior="ease-in" direction="up" scrollamount="2" height="30px">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </marquee>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <img src="images/real-esate.jpg" alt="">
+                    </div>
+                    <div class="service-text">
+                        <h3>Real E-state</h3>
+                        <p>
+                            We provide a wide range of real e-state services in everywhere in the country.
+                        </p>
+                    </div>
+                    <div class="service-list">
+                        <h3>Services list</h3>
+                        <marquee behavior="ease-in" direction="up" scrollamount="2" height="30px">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- services pages ends here -->
+
+
+        <!-- contact page starts here -->
+
+        <section class="container contact" id="contact">
+            <div class="left box">
+                <div class="contact-image">
+                    <img src="images/contact-img.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="right box">
+                <h1>Contact us</h1>
+                <form action="" method="get" class="input-group">
+                    <input type="text" placeholder="Name" class="input">
+                    <input type="email" placeholder="Email" class="input">
+                    <textarea placeholder="Message" class="input"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+
+            </div>
+        </section>
+
+        <!-- contact pages ends here -->
+
+    </main>
+    <footer>
+        <div class="footer-left">
+            <div class="logo">
+                <a href=""><h1>SOBIT.COM</h1></a>
+            </div>
+        </div>
+        <div class="footer-center">
+         <div class="social-icons">
+          <div class="social">
+            <a href=""><img src="images/linkedin.png" alt=""></a>
+            <a href=""> linkedin</a>
+          </div>
+          <div class="social">
+            <a href="https://instagram.com/vipindagar07"><img src="images/instagram.png" alt=""></a>
+            <a href="https://instagram.com/vipindagar07"> Instagram</a>
+          </div>
+         
+         </div>
+        </div>
+        <div class="footer-right">
+            <form action="" class="subscribe">
+                <input type="mail" name="mail" id="mail" class="input" placeholder="Enter mail for subscribe..">
+                <button type="submit" class="btn btn-white">Subscribe</button>
+            </form>
+
+        </div>
+    </footer>
+
+</body>
+<script src="js/index.js"></script>
+
+</html>
